@@ -1,0 +1,377 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="Política de privacidade do ORACONVERTER, conversor de unidades e moedas para iOS.">
+<meta name="robots" content="index, follow">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Ccircle cx='16' cy='16' r='14' fill='%23d9a520'/%3E%3Ccircle cx='16' cy='16' r='10.5' fill='none' stroke='%23fff3c4' stroke-width='1.6'/%3E%3C/svg%3E">
+<link rel="canonical" href="https://oraconverter.vkim.com.br/">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Política de Privacidade — ORACONVERTER">
+<meta property="og:description" content="O ORACONVERTER não tem login, não tem servidor próprio e não coleta seus dados pessoais.">
+<meta property="og:url" content="https://oraconverter.vkim.com.br/">
+<meta property="og:locale" content="pt_BR">
+<title>Política de Privacidade — ORACONVERTER</title>
+<style>
+  :root {
+    --paper:      #f5f6f8;
+    --surface:    #ffffff;
+    --ink:        #15171c;
+    --muted:      #5a5f69;
+    --faint:      #878d97;
+    --rule:       #e2e4e9;
+    --gold:       #8a6a12;
+    --gold-mark:  #d9a520;
+    --callout:    #eef0f4;
+
+    --serif: "Iowan Old Style", "Palatino Linotype", Palatino, "Book Antiqua", Georgia, serif;
+    --sans: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+    --mono: ui-monospace, "SF Mono", SFMono-Regular, Menlo, Consolas, monospace;
+  }
+
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --paper:     #101218;
+      --surface:   #171a21;
+      --ink:       #e7e9ee;
+      --muted:     #9aa1ad;
+      --faint:     #757d8a;
+      --rule:      #262b34;
+      --gold:      #f0c244;
+      --gold-mark: #f5c542;
+      --callout:   #1a1e26;
+    }
+  }
+
+  :root[data-theme="dark"] {
+    --paper:     #101218;
+    --surface:   #171a21;
+    --ink:       #e7e9ee;
+    --muted:     #9aa1ad;
+    --faint:     #757d8a;
+    --rule:      #262b34;
+    --gold:      #f0c244;
+    --gold-mark: #f5c542;
+    --callout:   #1a1e26;
+  }
+
+  :root[data-theme="light"] {
+    --paper:     #f5f6f8;
+    --surface:   #ffffff;
+    --ink:       #15171c;
+    --muted:     #5a5f69;
+    --faint:     #878d97;
+    --rule:      #e2e4e9;
+    --gold:      #8a6a12;
+    --gold-mark: #d9a520;
+    --callout:   #eef0f4;
+  }
+
+  body {
+    background: var(--paper);
+    color: var(--ink);
+    font-family: var(--sans);
+    font-size: 17px;
+    line-height: 1.65;
+    -webkit-font-smoothing: antialiased;
+  }
+
+  .wrap {
+    max-width: 40rem;
+    margin: 0 auto;
+    padding: 4rem 1.5rem 6rem;
+  }
+
+  /* ── Cabeçalho ─────────────────────────────────────────── */
+
+  header { display: flex; flex-direction: column; gap: 1.5rem; }
+
+  .mark {
+    width: 46px; height: 46px; border-radius: 50%;
+    background:
+      radial-gradient(circle at 32% 28%, #ffe9a8 0%, var(--gold-mark) 55%, #8f6a10 100%);
+    box-shadow: inset 0 0 0 3px rgba(255,255,255,.35);
+    flex: none;
+  }
+
+  .eyebrow {
+    font-family: var(--mono);
+    font-size: .72rem;
+    letter-spacing: .14em;
+    text-transform: uppercase;
+    color: var(--faint);
+  }
+
+  h1 {
+    font-family: var(--serif);
+    font-size: clamp(2rem, 6vw, 2.7rem);
+    line-height: 1.12;
+    font-weight: 600;
+    text-wrap: balance;
+    letter-spacing: -.01em;
+  }
+
+  .meta {
+    font-family: var(--mono);
+    font-size: .78rem;
+    color: var(--muted);
+    display: flex;
+    flex-wrap: wrap;
+    gap: .4rem 1.4rem;
+    padding-top: 1.25rem;
+    border-top: 1px solid var(--rule);
+  }
+  .meta b { color: var(--ink); font-weight: 600; }
+
+  /* ── Resumo ────────────────────────────────────────────── */
+
+  .callout {
+    background: var(--callout);
+    border-left: 3px solid var(--gold-mark);
+    padding: 1.25rem 1.4rem;
+    margin: 3rem 0 1rem;
+    display: flex;
+    flex-direction: column;
+    gap: .7rem;
+  }
+  .callout p { margin: 0; }
+  .callout .eyebrow { color: var(--gold); }
+
+  /* ── Tabela ────────────────────────────────────────────── */
+
+  .table-scroll { overflow-x: auto; margin: 1.75rem 0; }
+
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: .92rem;
+    min-width: 30rem;
+  }
+  th, td {
+    text-align: left;
+    padding: .7rem .9rem .7rem 0;
+    border-bottom: 1px solid var(--rule);
+    vertical-align: top;
+  }
+  th {
+    font-family: var(--mono);
+    font-size: .7rem;
+    letter-spacing: .1em;
+    text-transform: uppercase;
+    color: var(--faint);
+    font-weight: 500;
+    border-bottom-color: var(--ink);
+  }
+  td:first-child { font-weight: 600; white-space: nowrap; padding-right: 1.5rem; }
+
+  /* ── Seções ────────────────────────────────────────────── */
+
+  section {
+    margin-top: 3rem;
+    padding-top: 2rem;
+    border-top: 1px solid var(--rule);
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+  }
+
+  h2 {
+    font-family: var(--serif);
+    font-size: 1.45rem;
+    font-weight: 600;
+    line-height: 1.25;
+    text-wrap: balance;
+    display: flex;
+    gap: .75rem;
+    align-items: baseline;
+  }
+  h2 .num {
+    font-family: var(--mono);
+    font-size: .78rem;
+    color: var(--gold);
+    font-weight: 500;
+    flex: none;
+  }
+
+  p { margin: 0; }
+  section > p + p { margin-top: -.25rem; }
+
+  ul { display: flex; flex-direction: column; gap: .6rem; padding-left: 1.15rem; }
+  li::marker { color: var(--gold-mark); }
+
+  strong { font-weight: 600; }
+
+  a { color: var(--gold); text-underline-offset: 3px; }
+  a:focus-visible {
+    outline: 2px solid var(--gold-mark);
+    outline-offset: 3px;
+    border-radius: 2px;
+  }
+
+  code {
+    font-family: var(--mono);
+    font-size: .85em;
+    background: var(--callout);
+    padding: .12em .4em;
+    border-radius: 3px;
+  }
+
+  footer {
+    margin-top: 3.5rem;
+    padding-top: 1.5rem;
+    border-top: 1px solid var(--rule);
+    font-family: var(--mono);
+    font-size: .74rem;
+    color: var(--faint);
+    line-height: 1.7;
+  }
+</style>
+<style>
+  /* Reset mínimo — o wrapper do Claude fornecia isso; num site próprio, não. */
+  *, *::before, *::after { box-sizing: border-box; }
+  html { -webkit-text-size-adjust: 100%; }
+  body, h1, h2, p, ul, figure { margin: 0; }
+  ul { list-style: disc; }
+  img { max-width: 100%; display: block; }
+  @media (prefers-reduced-motion: reduce) {
+    *, *::before, *::after { animation-duration: .01ms !important; transition-duration: .01ms !important; }
+  }
+</style>
+</head>
+<body>
+<div class="wrap">
+
+  <header>
+    <div class="mark" aria-hidden="true"></div>
+    <div>
+      <p class="eyebrow">ORACONVERTER para iOS</p>
+      <h1>Política de Privacidade</h1>
+    </div>
+    <div class="meta">
+      <span><b>Vigente desde</b> 11 de agosto de 2026</span>
+      <span><b>Versão</b> 1.0</span>
+    </div>
+  </header>
+
+  <div class="callout">
+    <p class="eyebrow">Em uma frase</p>
+    <p>O ORACONVERTER <strong>não tem login, não tem servidor próprio e não coleta seus dados pessoais</strong>. O que você configura fica guardado apenas no seu iPhone. As únicas conexões que o app faz são para buscar a cotação das moedas e para exibir anúncios.</p>
+  </div>
+
+  <div class="table-scroll">
+    <table>
+      <thead>
+        <tr>
+          <th scope="col">O quê</th>
+          <th scope="col">Onde fica</th>
+          <th scope="col">Sai do aparelho?</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Seu nome (opcional)</td>
+          <td>Somente no iPhone</td>
+          <td>Não</td>
+        </tr>
+        <tr>
+          <td>Preferências do app</td>
+          <td>Somente no iPhone</td>
+          <td>Não</td>
+        </tr>
+        <tr>
+          <td>Cotações salvas</td>
+          <td>Somente no iPhone</td>
+          <td>Não</td>
+        </tr>
+        <tr>
+          <td>Identificador de anúncio</td>
+          <td>Sistema iOS</td>
+          <td>Sim — Google AdMob</td>
+        </tr>
+        <tr>
+          <td>Dados de pagamento</td>
+          <td>Apple</td>
+          <td>Nunca chegam até nós</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+
+  <section>
+    <h2><span class="num">01</span> O que o app guarda</h2>
+    <p>Tudo o que você configura no ORACONVERTER é armazenado <strong>localmente no seu aparelho</strong>, usando o mecanismo padrão de preferências do iOS. Isso inclui:</p>
+    <ul>
+      <li>O nome que você digitar na tela de Conta, se digitar algum — é opcional e serve apenas para o app te cumprimentar.</li>
+      <li>Suas preferências: vibração do teclado e o par de moedas que abre por padrão.</li>
+      <li>A última cotação de câmbio recebida, guardada para que o app funcione mesmo sem internet.</li>
+    </ul>
+    <p>Nada disso é enviado para nós, porque não existe um servidor nosso para onde enviar. Ao desinstalar o app, todos esses dados são apagados junto.</p>
+  </section>
+
+  <section>
+    <h2><span class="num">02</span> Cotações de câmbio</h2>
+    <p>Para manter as taxas atualizadas, o app consulta a API pública <a href="https://frankfurter.dev" rel="noopener">Frankfurter</a>, que publica as taxas de referência do Banco Central Europeu.</p>
+    <p>Essa consulta <strong>não envia nenhuma informação sua</strong>: é apenas um pedido pela tabela de taxas do dia. O app não informa quais moedas você usa, quais valores você digita, nem qualquer identificador seu.</p>
+  </section>
+
+  <section>
+    <h2><span class="num">03</span> Anúncios</h2>
+    <p>A versão gratuita do ORACONVERTER exibe anúncios fornecidos pelo <strong>Google AdMob</strong>. Para escolher quais anúncios mostrar e medir seu desempenho, o Google pode acessar o identificador de publicidade do seu aparelho e informações técnicas como modelo, sistema operacional e idioma.</p>
+    <p>Esse tratamento é feito pelo Google, sob a política de privacidade dele: <a href="https://policies.google.com/privacy" rel="noopener">policies.google.com/privacy</a>.</p>
+    <p>Você tem controle sobre isso:</p>
+    <ul>
+      <li>Na primeira abertura, se você estiver no Espaço Econômico Europeu, no Reino Unido ou na Suíça, o app pergunta se você autoriza anúncios personalizados. Você pode recusar.</li>
+      <li>A qualquer momento, em <strong>Menu › Conta</strong>, é possível rever essa escolha.</li>
+      <li>No iOS, em <em>Ajustes › Privacidade e Segurança › Rastreamento</em>, você pode negar o rastreamento para o app.</li>
+      <li>Comprando o <strong>ORACONVERTER Pro</strong>, os anúncios deixam de ser exibidos.</li>
+    </ul>
+  </section>
+
+  <section>
+    <h2><span class="num">04</span> Compra dentro do app</h2>
+    <p>O ORACONVERTER Pro é um pagamento único que remove os anúncios. A compra é processada inteiramente pela <strong>App Store</strong> e fica vinculada ao seu ID Apple.</p>
+    <p>Não temos acesso ao seu cartão, aos seus dados bancários nem ao seu ID Apple. O app apenas pergunta ao sistema se aquela compra existe, e recebe sim ou não.</p>
+  </section>
+
+  <section>
+    <h2><span class="num">05</span> O que o app não faz</h2>
+    <ul>
+      <li>Não pede cadastro, e-mail ou senha.</li>
+      <li>Não acessa contatos, fotos, localização, microfone ou câmera.</li>
+      <li>Não usa ferramentas de análise de comportamento nem rastreadores próprios.</li>
+      <li>Não vende nem compartilha dados pessoais com terceiros.</li>
+    </ul>
+  </section>
+
+  <section>
+    <h2><span class="num">06</span> Crianças</h2>
+    <p>O ORACONVERTER não é direcionado a menores de 13 anos e não coleta intencionalmente dados de crianças. Se você acredita que uma criança forneceu dados através do app, entre em contato — embora, como descrito acima, o app não transmita dados pessoais para nós.</p>
+  </section>
+
+  <section>
+    <h2><span class="num">07</span> Seus direitos</h2>
+    <p>Legislações como o <strong>GDPR</strong> (Europa) e a <strong>LGPD</strong> (Brasil) garantem a você o direito de acessar, corrigir e excluir seus dados pessoais.</p>
+    <p>No caso deste app, esses direitos se resolvem no próprio aparelho: como todos os dados ficam armazenados localmente, você pode alterá-los na tela de Conta ou apagá-los por completo desinstalando o app. Não mantemos cópia de nada.</p>
+    <p>Para os dados tratados pelo Google AdMob, os pedidos devem ser dirigidos ao Google, através da política citada na seção 03.</p>
+  </section>
+
+  <section>
+    <h2><span class="num">08</span> Mudanças nesta política</h2>
+    <p>Se o app passar a tratar dados de forma diferente, esta página será atualizada e a data de vigência no topo será alterada. Mudanças relevantes serão informadas dentro do próprio app.</p>
+  </section>
+
+  <section>
+    <h2><span class="num">09</span> Contato</h2>
+    <p>Dúvidas sobre privacidade, ou pedidos relacionados aos seus dados:</p>
+    <p><a href="mailto:binatural@gmail.com">binatural@gmail.com</a></p>
+  </section>
+
+  <footer>
+    ORACONVERTER · Conversor de unidades e moedas para iOS<br>
+    Cotações por Frankfurter / Banco Central Europeu · Anúncios por Google AdMob
+  </footer>
+
+</div>
+</body>
+</html>
