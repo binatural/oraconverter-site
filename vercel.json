@@ -3,8 +3,8 @@
   "cleanUrls": true,
   "trailingSlash": false,
   "rewrites": [
-    { "source": "/privacidade", "destination": "/index.html" },
-    { "source": "/privacy", "destination": "/index.html" }
+    { "source": "/privacidade", "destination": "/" },
+    { "source": "/privacy", "destination": "/" }
   ],
   "headers": [
     {
