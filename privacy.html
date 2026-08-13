@@ -9,9 +9,11 @@
 <link rel="canonical" href="https://oraconverter.vkim.com.br/privacy">
 <meta property="og:type" content="website">
 <meta property="og:title" content="Política de Privacidade — ORACONVERTER">
-<meta property="og:description" content="O ORACONVERTER não tem login, não tem servidor próprio e não coleta seus dados pessoais.">
+<meta property="og:description" content="Como o ORACONVERTER trata preferências locais, cotações, anúncios e assinaturas.">
 <meta property="og:url" content="https://oraconverter.vkim.com.br/privacy">
 <meta property="og:locale" content="pt_BR">
+<meta property="og:image" content="https://oraconverter.vkim.com.br/og.png">
+<meta name="twitter:card" content="summary_large_image">
 <title>Política de Privacidade — ORACONVERTER</title>
 <style>
   :root {
@@ -249,14 +251,14 @@
       <h1>Política de Privacidade</h1>
     </div>
     <div class="meta">
-      <span><b>Vigente desde</b> 12 de agosto de 2026</span>
-      <span><b>Versão</b> 1.1</span>
+      <span><b>Vigente desde</b> 13 de agosto de 2026</span>
+      <span><b>Versão</b> 1.2</span>
     </div>
   </header>
 
   <div class="callout">
     <p class="eyebrow">Em uma frase</p>
-    <p>O ORACONVERTER <strong>não tem login, não tem servidor próprio e não coleta seus dados pessoais</strong>. O que você configura fica guardado apenas no seu iPhone. As únicas conexões que o app faz são para buscar a cotação das moedas e para exibir anúncios.</p>
+    <p>O ORACONVERTER <strong>não exige login</strong>. Suas preferências e seu histórico ficam no iPhone. O app acessa a internet para consultar cotações, exibir o banner do Google AdMob na versão gratuita e validar a assinatura pela Apple.</p>
   </div>
 
   <div class="table-scroll">
@@ -270,24 +272,24 @@
       </thead>
       <tbody>
         <tr>
-          <td>Preferências do app</td>
-          <td>No iPhone e, para assinantes, no iCloud pessoal</td>
-          <td>Não vão para servidor nosso</td>
-        </tr>
-        <tr>
-          <td>Cotações salvas</td>
+          <td>Preferências e histórico</td>
           <td>Somente no iPhone</td>
           <td>Não</td>
         </tr>
         <tr>
-          <td>Identificador de anúncio</td>
-          <td>Sistema iOS</td>
-          <td>Sim — Google AdMob</td>
+          <td>Última cotação</td>
+          <td>Somente no iPhone</td>
+          <td>Não</td>
         </tr>
         <tr>
-          <td>Dados de pagamento</td>
+          <td>Dados técnicos e de anúncios</td>
+          <td>Google e parceiros de publicidade</td>
+          <td>Sim, conforme consentimento e configuração</td>
+        </tr>
+        <tr>
+          <td>Compra e renovação</td>
           <td>Apple</td>
-          <td>Nunca chegam até nós</td>
+          <td>O app recebe apenas o status da assinatura</td>
         </tr>
       </tbody>
     </table>
@@ -298,36 +300,36 @@
     <p>Tudo o que você configura no ORACONVERTER é armazenado <strong>localmente no seu aparelho</strong>, usando o mecanismo padrão de preferências do iOS. Isso inclui:</p>
     <ul>
       <li>Suas preferências: vibração do teclado e as moedas e unidades que você escolheu acompanhar.</li>
+      <li>O histórico das conversões confirmadas, limitado às 200 mais recentes.</li>
       <li>A última cotação de câmbio recebida, guardada para que o app funcione mesmo sem internet.</li>
     </ul>
     <p>O app não pede nem guarda nome, e-mail ou qualquer dado que identifique você.</p>
-    <p>Nada disso é enviado para nós, porque não existe um servidor nosso para onde enviar. Ao desinstalar o app, esses dados são apagados junto.</p>
-    <p>Se você assinar o ORACONVERTER Pro e ativar o backup, essas mesmas preferências passam a ser gravadas também no <strong>seu</strong> iCloud, para aparecerem nos seus outros aparelhos Apple. Quem guarda é a Apple, na sua conta — continuamos sem acesso.</p>
+    <p>Nada disso é enviado para um servidor do ORACONVERTER. Você pode limpar o histórico dentro do app; ao desinstalá-lo, os dados locais são apagados pelo iOS.</p>
   </section>
 
   <section>
     <h2><span class="num">02</span> Cotações de câmbio</h2>
-    <p>Para manter as taxas atualizadas, o app consulta a API pública <a href="https://frankfurter.dev" rel="noopener">Frankfurter</a>, que publica as taxas de referência do Banco Central Europeu.</p>
-    <p>Essa consulta <strong>não envia nenhuma informação sua</strong>: é apenas um pedido pela tabela de taxas do dia. O app não informa quais moedas você usa, quais valores você digita, nem qualquer identificador seu.</p>
+    <p>Para manter as taxas atualizadas, o app consulta a API pública <a href="https://frankfurter.dev" rel="noopener">Frankfurter</a>, que agrega taxas de referência diárias de bancos centrais.</p>
+    <p>A consulta pede a tabela geral de taxas. O app <strong>não envia as moedas escolhidas, os valores digitados nem o histórico</strong>. Como em qualquer conexão de internet, dados técnicos da requisição, como endereço IP e agente do dispositivo, podem ser processados pela infraestrutura do serviço e pela Cloudflare.</p>
   </section>
 
   <section>
     <h2><span class="num">03</span> Anúncios</h2>
-    <p>A versão gratuita do ORACONVERTER exibe anúncios fornecidos pelo <strong>Google AdMob</strong>. Para escolher quais anúncios mostrar e medir seu desempenho, o Google pode acessar o identificador de publicidade do seu aparelho e informações técnicas como modelo, sistema operacional e idioma.</p>
-    <p>Esse tratamento é feito pelo Google, sob a política de privacidade dele: <a href="https://policies.google.com/privacy" rel="noopener">policies.google.com/privacy</a>.</p>
+    <p>A versão gratuita exibe somente um banner inferior fornecido pelo <strong>Google AdMob</strong>. Google e parceiros de publicidade podem tratar endereço IP, informações do dispositivo e do app, identificadores disponíveis e interações com anúncios para entrega, personalização, medição e prevenção de fraude, conforme as permissões e escolhas aplicáveis.</p>
+    <p>Esses dados são compartilhados diretamente com o Google e seus parceiros, não armazenados em um servidor do ORACONVERTER. Consulte <a href="https://business.safety.google/privacy/" rel="noopener">Responsabilidade sobre dados empresariais do Google</a> e a <a href="https://policies.google.com/privacy" rel="noopener">Política de Privacidade do Google</a>.</p>
     <p>Você tem controle sobre isso:</p>
     <ul>
       <li>Na primeira abertura, se você estiver no Espaço Econômico Europeu, no Reino Unido ou na Suíça, o app pergunta se você autoriza anúncios personalizados. Você pode recusar.</li>
-      <li>A qualquer momento, em <strong>Menu › Conta</strong>, é possível rever essa escolha.</li>
-      <li>No iOS, em <em>Ajustes › Privacidade e Segurança › Rastreamento</em>, você pode negar o rastreamento para o app.</li>
-      <li>Comprando o <strong>ORACONVERTER Pro</strong>, os anúncios deixam de ser exibidos.</li>
+      <li>Quando exigido, em <strong>Menu › Ajustes › Privacidade dos anúncios</strong>, é possível rever essa escolha.</li>
+      <li>As permissões de rastreamento também podem ser controladas nos Ajustes de Privacidade do iOS.</li>
+      <li>Com uma assinatura <strong>ORACONVERTER Pro</strong> ativa, o banner inferior deixa de ser exibido.</li>
     </ul>
   </section>
 
   <section>
     <h2><span class="num">04</span> Assinatura</h2>
-    <p>O ORACONVERTER Pro é um pagamento único que remove os anúncios. A compra é processada inteiramente pela <strong>App Store</strong> e fica vinculada ao seu ID Apple.</p>
-    <p>Não temos acesso ao seu cartão, aos seus dados bancários nem ao seu ID Apple. O app apenas pergunta ao sistema se aquela compra existe, e recebe sim ou não.</p>
+    <p>O ORACONVERTER Pro é uma <strong>assinatura anual com renovação automática</strong> que remove o banner inferior enquanto estiver ativa. A compra, cobrança, renovação, cancelamento e reembolso são processados pela App Store.</p>
+    <p>Não recebemos seu cartão nem seus dados bancários. O app recebe da Apple apenas as informações necessárias para verificar o direito ao Pro, como status, validade e situação da renovação.</p>
   </section>
 
   <section>
@@ -335,8 +337,8 @@
     <ul>
       <li>Não pede cadastro, e-mail ou senha.</li>
       <li>Não acessa contatos, fotos, localização, microfone ou câmera.</li>
-      <li>Não usa ferramentas de análise de comportamento nem rastreadores próprios.</li>
-      <li>Não vende nem compartilha dados pessoais com terceiros.</li>
+      <li>Não usa uma plataforma própria de análise de comportamento.</li>
+      <li>Não envia suas conversões, preferências ou histórico a anunciantes.</li>
     </ul>
   </section>
 
@@ -348,8 +350,8 @@
   <section>
     <h2><span class="num">07</span> Seus direitos</h2>
     <p>Legislações como o <strong>GDPR</strong> (Europa) e a <strong>LGPD</strong> (Brasil) garantem a você o direito de acessar, corrigir e excluir seus dados pessoais.</p>
-    <p>No caso deste app, esses direitos se resolvem no próprio aparelho: como todos os dados ficam armazenados localmente, você pode alterá-los na tela de Conta ou apagá-los por completo desinstalando o app. Não mantemos cópia de nada.</p>
-    <p>Para os dados tratados pelo Google AdMob, os pedidos devem ser dirigidos ao Google, através da política citada na seção 03.</p>
+    <p>As preferências podem ser alteradas em <strong>Menu › Ajustes</strong>, e o histórico pode ser apagado na tela <strong>Histórico</strong>. A desinstalação remove os dados locais do app.</p>
+    <p>Para dados tratados pelo Google AdMob ou pela Apple, consulte os controles e canais indicados nas políticas desses provedores.</p>
   </section>
 
   <section>
@@ -365,7 +367,7 @@
 
   <footer>
     ORACONVERTER · Conversor de unidades e moedas para iOS<br>
-    Cotações por Frankfurter / Banco Central Europeu · Anúncios por Google AdMob
+    Cotações por Frankfurter · Anúncios por Google AdMob · Compras pela Apple
   </footer>
 
 </div>

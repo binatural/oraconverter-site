@@ -2,27 +2,30 @@
 
 Site institucional do **ORACONVERTER**, conversor de unidades e moedas para iOS.
 
-Hoje serve a **política de privacidade** do app, exigida pela App Store e pelo
-Google AdMob.
+Serve a página institucional, a política de privacidade, os termos de uso e o
+suporte público do app.
 
 ## Rotas
 
 | Caminho        | O que faz                                  |
 | -------------- | ------------------------------------------ |
+| `/`            | Página institucional                       |
 | `/privacy`     | Política de privacidade (URL canônica)     |
-| `/privacidade` | Mesma página, alias em português           |
-| `/`            | Redireciona para `/privacy` (307)          |
-
-O redirecionamento da raiz é **temporário (307)**, não permanente (308), de
-propósito: navegadores não guardam 307 em cache eterno, então a raiz continua
-livre para receber uma landing page do app no futuro sem que ninguém fique
-preso no redirecionamento antigo.
+| `/support`     | Suporte e perguntas frequentes             |
+| `/terms`       | Termos de uso                              |
+| `/privacidade` | Alias em português para `/privacy`         |
+| `/suporte`     | Alias em português para `/support`         |
+| `/termos`      | Alias em português para `/terms`           |
 
 ## Estrutura
 
 ```
-privacy.html   política de privacidade (site estático, sem build)
-vercel.json    redirects, rewrites e cabeçalhos de segurança
+index.html     página institucional
+privacy.html   política de privacidade
+support.html   suporte e perguntas frequentes
+terms.html     termos de uso
+site.css       estilos compartilhados
+vercel.json    rotas e cabeçalhos de segurança
 ```
 
 Não há dependências nem etapa de build: é HTML e CSS puros, num único arquivo.
